@@ -15,12 +15,12 @@ export function AppLayout({ children }: AppLayoutProps) {
         <div className="flex-1 flex flex-col">
           <header className="h-16 border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
             <div className="flex items-center justify-between h-full px-6">
-              <SidebarTrigger className="hover:bg-muted p-2 rounded-lg transition-smooth">
+              <SidebarTrigger className="hover:bg-slate-600 p-2 rounded-lg transition-smooth">
                 <Menu className="w-5 h-5" />
               </SidebarTrigger>
               
               <div className="flex items-center gap-4">
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-muted-foreground text-black font-bold">
                   Welcome to FeedbackHub
                 </div>
               </div>

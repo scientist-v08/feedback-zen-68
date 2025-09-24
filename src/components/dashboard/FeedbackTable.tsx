@@ -48,7 +48,7 @@ export function FeedbackTable({ feedback }: FeedbackTableProps) {
             <TableBody>
               {feedback.length === 0 ? (
                 <TableRow>
-                  <TableCell colSpan={5} className="text-center py-8 text-muted-foreground">
+                  <TableCell colSpan={5} className="text-center py-8 text-black">
                     No feedback found matching your filters.
                   </TableCell>
                 </TableRow>
@@ -58,7 +58,7 @@ export function FeedbackTable({ feedback }: FeedbackTableProps) {
                     <TableCell>
                       <div>
                         <div className="font-medium text-foreground">{item.name}</div>
-                        <div className="text-sm text-muted-foreground">{item.email}</div>
+                        <div className="text-sm text-black">{item.email}</div>
                       </div>
                     </TableCell>
                     <TableCell>
@@ -69,11 +69,11 @@ export function FeedbackTable({ feedback }: FeedbackTableProps) {
                         {item.category}
                       </Badge>
                     </TableCell>
-                    <TableCell className="text-muted-foreground">
+                    <TableCell className="text-black">
                       {new Date(item.date).toLocaleDateString()}
                     </TableCell>
                     <TableCell>
-                      <div className="max-w-xs truncate text-muted-foreground">
+                      <div className="max-w-xs truncate text-black">
                         {item.comments}
                       </div>
                     </TableCell>

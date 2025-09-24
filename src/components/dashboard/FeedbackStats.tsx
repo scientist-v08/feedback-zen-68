@@ -34,7 +34,7 @@ export function FeedbackStats({ stats }: FeedbackStatsProps) {
         <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-muted-foreground">Total Feedback</p>
+              <p className="text-sm font-medium">Total Feedback</p>
               <p className="text-3xl font-bold text-primary">{stats.totalCount}</p>
             </div>
             <MessageSquare className="w-8 h-8 text-primary" />
@@ -46,7 +46,7 @@ export function FeedbackStats({ stats }: FeedbackStatsProps) {
         <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-muted-foreground">Average Rating</p>
+              <p className="text-sm font-medium">Average Rating</p>
               <div className="flex items-center gap-2">
                 <p className="text-3xl font-bold text-success">{stats.averageRating}</p>
                 <Star className="w-6 h-6 fill-yellow-400 text-yellow-400" />
@@ -61,11 +61,11 @@ export function FeedbackStats({ stats }: FeedbackStatsProps) {
         <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-muted-foreground">Top Category</p>
+              <p className="text-sm font-medium">Top Category</p>
               <p className="text-lg font-bold text-accent">
                 {categoryData[0]?.category || 'N/A'}
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm">
                 {categoryData[0]?.count || 0} submissions
               </p>
             </div>

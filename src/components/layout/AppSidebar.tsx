@@ -58,15 +58,15 @@ export function AppSidebar() {
             </div>
             {!isCollapsed && (
               <div>
-                <h1 className="font-bold text-lg text-foreground">FeedbackHub</h1>
-                <p className="text-xs text-muted-foreground">Customer Insights</p>
+                <h1 className="font-bold text-lg text-foreground text-black">FeedbackHub</h1>
+                <p className="text-xs text-muted-foreground text-black">Customer Insights</p>
               </div>
             )}
           </div>
         </div>
 
         <SidebarGroup className="px-4 py-6">
-          <SidebarGroupLabel className="text-muted-foreground text-xs uppercase tracking-wider mb-4">
+          <SidebarGroupLabel className="text-muted-foreground text-xs uppercase tracking-wider mb-4 text-black">
             {!isCollapsed && "Navigation"}
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -77,7 +77,7 @@ export function AppSidebar() {
                     <NavLink 
                       to={item.url} 
                       end={item.url === "/"}
-                      className={getNavClassName(item.url)}
+                      className={`${getNavClassName(item.url)} py-7`}
                     >
                       <item.icon className="w-5 h-5 mr-3" />
                       {!isCollapsed && (

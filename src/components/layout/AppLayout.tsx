@@ -20,7 +20,7 @@ export function AppLayout({ children }: AppLayoutProps) {
               </SidebarTrigger>
               
               <div className="flex items-center gap-4">
-                <div className="text-sm text-muted-foreground text-black font-bold">
+                <div className="text-sm text-black font-bold">
                   Welcome to FeedbackHub
                 </div>
               </div>

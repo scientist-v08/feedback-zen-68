@@ -59,14 +59,14 @@ export function AppSidebar() {
             {!isCollapsed && (
               <div>
                 <h1 className="font-bold text-lg text-foreground text-black">FeedbackHub</h1>
-                <p className="text-xs text-muted-foreground text-black">Customer Insights</p>
+                <p className="text-xs text-black">Customer Insights</p>
               </div>
             )}
           </div>
         </div>
 
         <SidebarGroup className="px-4 py-6">
-          <SidebarGroupLabel className="text-muted-foreground text-xs uppercase tracking-wider mb-4 text-black">
+          <SidebarGroupLabel className="text-xs uppercase tracking-wider mb-4 text-black">
             {!isCollapsed && "Navigation"}
           </SidebarGroupLabel>
           <SidebarGroupContent>
